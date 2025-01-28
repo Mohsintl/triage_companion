@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=450, height=800">
+  <title>Bug Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h2>Triaging Companion</h2>
+  </div>
+
+  <nav id="navbar">
+    <ul>
+      <li class="nav-item active" data-target="bug-list">Bug List</li>
+      <li class="nav-item" data-target="most-used-comments">Most Used Comments</li>
+      <li class="nav-item" data-target="settings">Settings</li>
+      <li class="nav-item" data-target="about">About</li>
+    </ul>
+  </nav>
+
+  <main id="content">
+    <section id="bug-list" class="content-section active">
+      <div class="button-container">
+        <button id="triageButton">Get Data</button>
+        <button id="copyAllButton">Copy All</button>
+      </div>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by Defect ID or Title">
+      </div>
+
+      <div class="table-container">
+        <table id="bugTable">
+          <!-- Table content will be dynamically added by JavaScript -->
+        </table>
+      </div>
+    </section>
+
+    <section id="most-used-comments" class="content-section">
+      <h3>Most Used Comments</h3>
+      <div id="inputContainer">
+        <input type="text" id="newComment" placeholder="Enter a new comment">
+        <button id="addComment">Add Comment</button>
+      </div>
+      <div class="table-container">
+        <table id="commentList" class="comment-table">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Comment</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Comments will be dynamically inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="settings" class="content-section">
+      <h3>Settings</h3>
+      <!-- Add settings content here -->
+    </section>
+
+    <section id="about" class="content-section">
+      <h3>About</h3>
+      <!-- Add about content here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by Mohsin | <a href="https://github.com/Mohsintl" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

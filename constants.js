@@ -1,0 +1,2 @@
+export const baseUrl = 'https://jira.sc-corp.net';
+export const storageInfo = "This Extension is to help the triaging teams save there effort of copy pasting the bug details  manually to two different sheets with different formats. The extension will scrape the defect details from Jira and temperorily save it in chrome storage which helps display it in extension and also allowing it be copied to clipboard to further paste it in trackor sheet with fewer clicks than manually copy pasting "; 
